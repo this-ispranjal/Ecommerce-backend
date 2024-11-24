@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json()); //parse JSON request body
-app.use(cors("http://localhost:3000"));
+app.use(cors("https://rajecommerse.onrender.com"));
 
 app.use("/api/admin", adminRoutes)
 app.use("/api/post", postRoutes)
